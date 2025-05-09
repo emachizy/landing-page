@@ -11,6 +11,33 @@ body {
   color: #333;
 }
 
+.nav-bar {
+  background-color: #f9f5f5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  padding-block: 12px;
+  padding-inline: 10px;
+  display: flex;
+  /* gap: 18px; */
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+}
+
+.nav-link a:hover {
+  color: rgb(86, 86, 240);
+}
+
 /* Hero Section */
 .hero {
   background: rgb(5, 16, 12);
