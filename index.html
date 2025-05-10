@@ -15,13 +15,14 @@
     <header>
       <nav class="nav-bar">
         <div class="logo">Logo</div>
-        <div class="nav-link"></div>
-        <a href="/">Home</a>
-        <a href="features">Features</a>
-        <a href="about">About</a>
-        <a href="contact">Contact</a>
+        <div class="nav-link">
+          <a href="/">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
-      <section role="banner" class="hero">
+      <section role="banner" class="hero" id="hero">
         <h1>Welcome to Our <span>Product</span></h1>
         <p class="subheadline">
           Discover the best solution for your needs with ease and efficiency.
@@ -48,7 +49,11 @@
     <!-- Main Content -->
     <main>
       <!-- Features Section -->
-      <section class="features" aria-labelledby="features-heading">
+      <section
+        class="features"
+        aria-labelledby="features-heading"
+        id="features"
+      >
         <h2 id="features-heading">Our Key Features</h2>
         <div class="features-grid">
           <!-- Feature 1 -->
@@ -73,6 +78,56 @@
             <p>Stay connected and productive with this essential feature.</p>
           </article>
         </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+          At EmTech, we are dedicated to providing innovative solutions that
+          enhance your productivity and streamline your workflow. Our team of
+          experts works tirelessly to bring you the best tools and services
+          tailored to your needs.
+        </p>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="contact-details">
+          <h2>Contact Us</h2>
+          <p>Have questions or need support? Reach out to us:</p>
+          <ul>
+            <li>Email: <a href="mailto:info@emtech.com">info@emtech.com</a></li>
+            <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li>Address: 123 Tech Street, Silicon Valley, CA</li>
+          </ul>
+        </div>
+        <form action="">
+          <div class="form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            required
+          />
+          <textarea name="textarea" id="textarea" required></textarea>
+        </form>
       </section>
     </main>
 
@@ -117,7 +172,7 @@
           </ul>
         </div>
       </div>
-      <p class="copyright">&copy; 2025 EmTech. All rights reserved.</p>
+      <p class="copyright">© 2025 EmTech. All rights reserved.</p>
     </footer>
   </body>
 </html>
